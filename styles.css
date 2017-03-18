@@ -25,3 +25,11 @@ div.FlipCardButtonPosition {
     top: 500px;
     left: 10px;
 }
+.FlashText {
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 66.5px;
+    font-weight: bold;
+    font-family: cursive;
+    color: deeppink;
+}
