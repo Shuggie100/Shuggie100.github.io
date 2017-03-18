@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->
+    <script src="jquery-3.1.1.js"> </script>
+    <script>
+function myFunction() {
+//    var x = document.getElementById('FlashCardElephant');
+//    if (x.style.display === 'none') {
+//        x.style.display = 'block';
+//    } else {
+//        x.style.display = 'none';
+//    }
+
+    $('#FlashCardElephant').toggle();
+    $('#ElephantText').toggle();
+}
+</script>
+<style>
+h1.visible {
+    visibility: visible
+}
+
+h1.hidden {
+    visibility: hidden
+}
+div.FlashCardElephant {
+    width: 100%;
+    text-align: center;
+    margin-top:20px;
+    background-color: solid white;
+}
+div.ElephantTextBox {
+  display: none;
+    position: absolute;
+    top: 240px;
+    width: 300px;
+    height: 230px;
+    border: 5px solid black;
+    background-color: solid blue;
+}
+div.FlipCardButtonPosition {
+    position: absolute;
+    top: 500px;
+    left: 10px;
+}
+</style>
+    <meta charset="UTF-8">
+    <title>Flash Card Game</title>
+  </head> 
+  <body>
+    <div id="ElephantText" class="ElephantTextBox"> <p> Elephant </p> </div>
+     <h1 style="font-size: 80px;"> Flash Cards </h1>
+     <h3> Identifing Animals </h3>
+     <div id="FlashCardElephant" style="border: 5px solid black; width: 300px; height: 230px; text-align: center;"> 
+        <!--<h1 id="card1"> Elephant </h1> -->
+        <img src="elephant-03.jpg" style="width:300px; height:230px;">
+     </div>
+     <div class="FlipCardButtonPosition"> <button id="flipcard" onclick="myFunction()" class="btn btn-danger" style="margin-top: 18px;"> Click to Flip Card </button> </div>
+
+  </body>
+  <script type="text/javascript">
+   $("#card1").text('')
+  </script> 
+</html>
