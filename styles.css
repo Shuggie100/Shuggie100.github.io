@@ -33,3 +33,7 @@ div.FlipCardButtonPosition {
     font-family: cursive;
     color: deeppink;
 }
+#ElephantText {
+    display: none;
+    line-height: 200px;
+}
