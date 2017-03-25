@@ -20,11 +20,7 @@ div.ElephantTextBox {
     border: 5px solid black;
     background-color: solid blue;
 }
-div.FlipCardButtonPosition {
-    position: absolute;
-    top: 500px;
-    left: 10px;
-}
+
 .FlashText {
     margin-left: 12px;
     margin-right: 12px;
