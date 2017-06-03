@@ -1,19 +1,23 @@
 var cards=[
     {
         text: "Elephant",
-        image: "elephant-03.jpg"
+        image: "elephant-03.jpg",
+        fontsize: 55 
     },
     {
         text: "Tiger",
-        image: "tiger.jpg"
+        image: "tiger.jpg",
+        fontsize: 55
     },
     {
         text: "Lion",
-        image: "lion.jpg"
+        image: "lion.jpg",
+         fontsize: 55
     },
     {
         text: "Rhinoceros",
-        image: "rhinoceros.jpg"
+        image: "rhinoceros.jpg",
+        fontsize: 45
     }
 ];
 var currentanimal=0;
@@ -36,5 +40,6 @@ function NextCard(){currentanimal++;
     $('#FlashCardText').hide();
     var card=cards[currentanimal];
 $("#AnimalName").text(card.text);
+$("#AnimalName").css("font-size",card.fontsize);
 $("#AnimalPicture").prop('src',card.image);
 }

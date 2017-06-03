@@ -11,29 +11,44 @@ h1.hidden {
     margin-right: 12px;
     font-size: 66.5px;
     font-weight: bold;
-    font-family: cursive;
+    font-family: sans-serif;
     color: deeppink;
     display: none;
 }
 
-#AnimalBox
-{
-border: 5px solid black; width: 300px; height: 230px; text-align: center;
+#AnimalBox {
+outline: 4px solid black; width: 100%; height: 245px; text-align: center;
+margin-left:auto; margin-right:auto;
 }
 
 
-#FlipCardButtonPosition{
+#FlipCardButtonPosition {
     width:300px;
 }
-#AnimalPicture
-{
+
+#AnimalPicture {
     width:300px;
      height:230px;
 }
-.cardcontainer
-{
+.cardcontainer {
      margin:auto;
       max-width: 500px;
 }
-.leftbtn { float:left;}
-.rightbtn { float: right; }
+.leftbtn {
+    float:left;}
+.rightbtn { float: right;
+}
+
+#IdentifyingAnimalsContainer
+{
+    margin-left: auto; margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+#FlashCardsContainer
+{
+    margin-left: auto; margin-right: auto;
+    display: block;
+    text-align: center;
+}
