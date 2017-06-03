@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    -->
+<script>
+$(document).on("pagecreate","#pageone",function(){
+  var animalswipe =document.getEementById('AnimalBox')
+ animalswipe.on("swipe",function(){
+    $("h1").text("Swipe detected!");
+  });                       
+});
+</script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <script src="jquery-3.1.1.js"> </script>
+    <script src="jquery.mobile-1.4.5.min.js"> </script>
     <script src="main.js"> </script>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Flash Card Game</title>
   </head> 
   <body>
-    <!--div id="ElephantText" class="ElephantTextBox"> <p class="FlashText"> Elephant </p> </div-->
-    <div style="margin:auto; max-width: 500px;">
+    <div class="cardcontainer">
      <h1 style="font-size: 80px;"> Flash Cards </h1>
      <h3> Identifing Animals </h3>
-     <div id="ElephantBox" style="border: 5px solid black; width: 300px; height: 230px; text-align: center;"> 
-        <!--h1 id="card1"> Elephant </h1-->
-        <div id="FlashCardElephant">
-          <img src="elephant-03.jpg" style="width:300px; height:230px;">
-        </div>
-        <div id="ElephantText" class="FlashText"> Elephant </div>
+     <div id="AnimalBox"> 
+        <div id="FlashCardPicture" ><img id="AnimalPicture" src="elephant-03.jpg" /> </div>
+        <div id="FlashCardText" class="FlashText"> <span id="AnimalName"> Elephant </span> </div>
      </div>
-     <div class="FlipCardButtonPosition"> <button id="flipcard" onclick="myFunction()" class="btn btn-danger" style="margin-top: 18px;"> Click to Flip Card </button> </div>
-     <button id="NextCard" onclick="NextCard()" class="btn btn-danger" style="margin-top: 18px;"> Click for Next Card </button>
+     <div class="FlipCardButtonPosition">
+        <button type="button" id="flipcard" onclick="FlipFunction()" class="leftbtn" style="margin-top: 18px;"> Click to Flip Card </button>
+
+        <button type="button" id="NextCard" onclick="NextCard()" class="rightbtn" style="margin-top: 18px"> Click for Next Card </button>
+      </div>
     </div>
   </body>
-  <script type="text/javascript">
-   
-  </script> 
+ 
 </html>
