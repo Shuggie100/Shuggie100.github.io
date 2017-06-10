@@ -1,36 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
-<script>
-$(document).on("pagecreate","#pageone",function(){
-  var animalswipe =document.getEementById('AnimalBox')
- animalswipe.on("swipe",function(){
-    $("h1").text("Swipe detected!");
-  });                       
-});
-</script>
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <script src="jquery-3.1.1.js"> </script>
-    <script src="jquery.mobile-1.4.5.min.js"> </script>
-    <script src="main.js"> </script>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Flash Card Game</title>
-  </head> 
-  <body>
-    <div class="cardcontainer">
-     <h1 id="FlashCardsContainer" style="font-size: 80px;"> Flash Cards </h1>
-     <h3 id="IdentifyingAnimalsContainer"> Identifying Animals  </h3>
-     <div id="AnimalBox"> 
-        <div id="FlashCardPicture" ><img id="AnimalPicture" src="elephant-03.jpg" /> </div>
-        <div id="FlashCardText" class="FlashText"> <span id="AnimalName"> Elephant </span> </div>
-     </div>
-     <div class="FlipCardButtonPosition">
-        <button type="button" id="flipcard" onclick="FlipFunction()" class="leftbtn" style="margin-top: 18px;"> Click to Flip Card </button>
 
-        <button type="button" id="NextCard" onclick="NextCard()" class="rightbtn" style="margin-top: 18px"> Click for Next Card </button>
+<head>
+  <meta charset="UTF-8">
+  <title>Flash Card Game</title>
+
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <!-- <script src="jquery-3.1.1.js">
+
+  </script>-->
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="main.js">
+
+  </script>
+
+
+  <script src="jquery.mobile-1.4.5.min.js">
+
+  </script>
+
+
+  <script>
+    $(document).on("pagecreate", "#pageone", function () {
+      var animalswipe = document.getEementById('AnimalBox')
+      animalswipe.on("swipe", function () {
+        $("h1").text("Swipe detected!");
+      });
+    });
+  </script>
+
+
+</head>
+
+<body>
+  <div data-role="page">
+    <div data-role="panel" data-display="overlay" id="mypanel">
+      hello
+    </div>
+    <div data-role="header">
+      <a href="#mypanel"> Contents </a>
+      <h1 id="FlashCardsContainer" style="font-size: 80px;"> Flash Cards </h1>
+    </div>
+    <div data-role="content">
+      <div>
+        <div class="cardcontainer">
+          <h3 id="IdentifyingAnimalsContainer"> Identifying Animals </h3>
+          <div id="AnimalBox">
+            <div id="FlashCardPicture"><img id="AnimalPicture" src="elephant-03.jpg" />
+            </div>
+            <div id="FlashCardText" class="FlashText"> <span id="AnimalName"> Elephant </span>
+            </div>
+          </div>
+          <div class="FlipCardButtonPosition">
+            <button type="button" id="flipcard" onclick="FlipFunction()" class="leftbtn" style="margin-top: 18px;"> Click to Flip Card </button>
+
+            <button type="button" id="NextCard" onclick="NextCard()" class="rightbtn" style="margin-top: 18px"> Click for Next Card </button>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
       </div>
     </div>
-  </body>
- 
+    <div data-role="footer">
+    </div>
+  </div>
+
+</body>
+
 </html>

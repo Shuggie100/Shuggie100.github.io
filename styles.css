@@ -32,22 +32,21 @@ margin-left:auto; margin-right:auto;
 }
 .cardcontainer {
      margin:auto;
-      max-width: 500px;
+     max-width: 500px;
 }
 .leftbtn {
     float:left;}
+
 .rightbtn { float: right;
 }
 
-#IdentifyingAnimalsContainer
-{
+#IdentifyingAnimalsContainer {
     margin-left: auto; margin-right: auto;
     display: block;
     text-align: center;
 }
 
-#FlashCardsContainer
-{
+#FlashCardsContainer {
     margin-left: auto; margin-right: auto;
     display: block;
     text-align: center;
